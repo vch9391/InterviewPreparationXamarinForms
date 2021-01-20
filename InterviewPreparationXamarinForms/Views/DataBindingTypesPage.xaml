@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InterviewPreparationXamarinForms.Views.DataBindingTypesPage">
+    <StackLayout>
+        <Frame BorderColor="Red" CornerRadius="30">
+            <StackLayout Orientation="Vertical">
+                <Label Text="OneTime"/>
+                <Entry Text="{Binding OneTimeBindingProperty,Mode=OneTime}" />
+                <Entry Text="{Binding OneTimeBindingProperty}"/>
+            </StackLayout>
+        </Frame>
+         <Frame BorderColor="Red" CornerRadius="30">
+            <StackLayout Orientation="Vertical">
+                <Label Text="OneWay"/>
+                <Entry Text="{Binding OneWayBindingProperty,Mode=OneWay}"/>
+                <Entry Text="{Binding OneWayBindingProperty}"/>
+            </StackLayout>
+        </Frame>
+         <Frame BorderColor="Red" CornerRadius="30">
+            <StackLayout Orientation="Vertical">
+                <Label Text="OneWayToSource"/>
+                <Entry Text="{Binding OneWayToSourceBindingProperty,Mode=OneWayToSource}" />
+                <Entry Text="{Binding OneWayToSourceBindingProperty}"/>
+            </StackLayout>
+        </Frame>
+         <Frame BorderColor="Red" CornerRadius="30">
+            <StackLayout Orientation="Vertical">
+                <Label Text="TwoWay"/>
+                <Entry Text="{Binding TwoWayBindingProperty,Mode=TwoWay}" />
+                <Entry Text="{Binding TwoWayBindingProperty}"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+    
+</ContentPage>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:InterviewPreparationXamarinForms.CustomRenderer"
+             x:Class="InterviewPreparationXamarinForms.Views.CustomRendererPage">
+
+    <StackLayout>
+        <controls:StandardEntry
+            x:Name="entry"
+            Text=""
+            Padding="20"
+            BorderColor="Red"
+            BorderThickness="2"
+            CornerRadius="30"
+            Placeholder="Custom Entry">
+            <controls:StandardEntry.Triggers>
+        		<Trigger TargetType="Entry"
+                         Property="IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="Yellow" />
+                </Trigger>
+        	</controls:StandardEntry.Triggers>
+        </controls:StandardEntry>
+
+        <Button Text="Save"
+                FontSize="Large"
+                HorizontalOptions="Center">
+            <Button.Triggers>
+                <DataTrigger TargetType="Button"
+                             Binding="{Binding Source={x:Reference entry},
+                                               Path=Text.Length}"
+                             Value="0">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+                <DataTrigger TargetType="Button"
+                             Binding="{Binding Source={x:Reference entry},
+                                               Path=Text.Length}"
+                             Value="3">
+                    <Setter Property="HorizontalOptions" Value="Start" />
+                </DataTrigger>
+            </Button.Triggers>
+        </Button>
+
+        <Entry Text="Defult Entry"/>
+    </StackLayout>
+</ContentPage>

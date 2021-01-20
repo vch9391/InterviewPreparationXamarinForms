@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InterviewPreparationXamarinForms.MainPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0, 0, 0, 0" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <StackLayout>
+        <ListView ItemTapped="items_ItemTapped">
+        <ListView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>Custom Control - Image Button</x:String>
+                <x:String>Custom Control - Gauge</x:String>
+                <x:String>Dependency Service - Device Orientation</x:String>
+                <x:String>Dependency Service - Photo Picker Page</x:String>
+                <x:String>Data Binding Types</x:String>
+                <x:String>Custom Renderer Page with Trigger</x:String>
+                <x:String>Platform Effects</x:String>
+                <x:String>Custom List View</x:String>
+            </x:Array>
+        </ListView.ItemsSource>
+    </ListView>
+    </StackLayout>
+</ContentPage>
