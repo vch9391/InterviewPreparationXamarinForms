@@ -25,5 +25,6 @@
     <Folder Include="CustomRenderer\" />
     <Folder Include="PlatformEffectDemo\" />
     <Folder Include="Services\" />
+    <Folder Include="NUnitTestingSamples\" />
   </ItemGroup>
 </Project>

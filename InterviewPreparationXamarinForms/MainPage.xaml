@@ -20,6 +20,7 @@
                 <x:String>Custom Renderer Page with Trigger</x:String>
                 <x:String>Platform Effects</x:String>
                 <x:String>Custom List View</x:String>
+                <x:String>nUnit Main Page</x:String>
             </x:Array>
         </ListView.ItemsSource>
     </ListView>

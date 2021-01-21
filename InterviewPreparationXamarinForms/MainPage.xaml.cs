@@ -44,6 +44,9 @@ namespace InterviewPreparationXamarinForms
                 case "Custom List View":
                     Navigation.PushAsync(new CustomListViewPage());
                     break;
+                case "nUnit Main Page":
+                    Navigation.PushAsync(new nUnitMainPage());
+                    break;
 
             }
         }

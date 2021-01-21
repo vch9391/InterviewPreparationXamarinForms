@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InterviewPreparationXamarinForms.Views.nUnitMainPage">
+    <StackLayout Padding="20">
+        <Frame BackgroundColor="LightBlue" HasShadow="False">
+            <StackLayout Orientation="Vertical" Spacing="10">
+                <Entry Text="{Binding Entry1}" HeightRequest="40" />
+                <Entry Text="{Binding Entry2}" HeightRequest="40" />
+            </StackLayout>
+        </Frame>
+        <Button Command="{Binding SubmitCommand}" Text="Calculate" TextColor="White"
+                FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"
+                BackgroundColor="#088da5" />
+        <Label Text="{Binding Label1}" TextColor="Red" HeightRequest="40" HorizontalOptions="Center"/>
+    </StackLayout> 
+</ContentPage>
