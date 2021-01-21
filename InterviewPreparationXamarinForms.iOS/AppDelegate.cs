@@ -27,5 +27,34 @@ namespace InterviewPreparationXamarinForms.iOS
 
             return base.FinishedLaunching(app, options);
         }
+
+        /*
+        public override void OnActivated(UIApplication application)
+        {
+            Console.WriteLine("AppDelegate-OnActivated called in iOS App Delegate.");
+            base.OnActivated(application);
+        }
+        public override void WillEnterForeground(UIApplication application)
+        {
+            Console.WriteLine("AppDelegate-WillEnterForeground called in iOS App Delegate.");
+            base.OnActivated(application);
+        }
+        public override void OnResignActivation(UIApplication application)
+        {
+            Console.WriteLine("AppDelegate-OnResignActivation called in iOS App Delegate.");
+            base.OnActivated(application);
+        }
+        public override void DidEnterBackground(UIApplication application)
+        {
+            Console.WriteLine("AppDelegate-DidEnterBackground called in iOS App Delegate.");
+            base.OnActivated(application);
+        }
+        // not guaranteed that this will run
+        public override void WillTerminate(UIApplication application)
+        {
+            Console.WriteLine("AppDelegate-WillTerminate called in iOS App Delegate.");
+            base.OnActivated(application);
+        }
+        */
     }
 }

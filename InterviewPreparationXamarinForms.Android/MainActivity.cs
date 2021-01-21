@@ -56,5 +56,35 @@ namespace InterviewPreparationXamarinForms.Droid
                 }
             }
         }
+
+        protected override void OnStart()
+        {
+            Console.WriteLine("MainActivity-OnStart called in Android active.");
+            base.OnStart();
+        }
+
+        protected override void OnRestart()
+        {
+            Console.WriteLine("MainActivity-OnRestart called in Android active.");
+            base.OnRestart();
+        }
+
+        protected override void OnResume()
+        {
+            Console.WriteLine("MainActivity-OnResume called in Android active.");
+            base.OnResume();
+        }
+
+        protected override void OnPause()
+        {
+            Console.WriteLine("MainActivity-OnPause called in Android active.");
+            base.OnPause();
+        }
+
+        protected override void OnDestroy()
+        {
+            Console.WriteLine("MainActivity-OnDestroy called in Android active.");
+            base.OnDestroy();
+        }
     }
 }
